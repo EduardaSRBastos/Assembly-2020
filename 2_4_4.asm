@@ -1,0 +1,21 @@
+    MOV AH, 9
+    LEA DX, TEXTO1
+    INT 21H
+    
+    MOV AH, 9
+    LEA DX, TEXTO2
+    INT 21H 
+    
+    MOV AH, 9
+    LEA DX, TEXTO2
+    INT 21H
+    
+    MOV AH, 9
+    LEA DX, TEXTO3
+    INT 21H  
+    
+    RET
+    
+    TEXTO1 DB 0C9H,0CDH,0CDH,0BBH,'$'  
+    TEXTO2 DB ,13,10,0BAH,0B1H,0B1H,0BAH,'$'
+    TEXTO3 DB ,13,10,0C8H,0CDH,0CDH,0BCH,'$'  
